@@ -1,0 +1,33 @@
+type: PowerTurret
+name:썬더
+description:스파크의 개량형으로,사거리와 피해량을 늘렸습니다.
+
+requirements: [
+    copper/70,
+    lead/45,
+	silicon/40
+] 
+
+shootType: {
+      type: LightningBulletType
+      damage: 8
+      lightningLength: 17.5
+      lightningLengthRand: 0
+      lightningColor: a9d8ff
+}
+category: turret
+research:spark
+
+canOverdrive: true
+reloadTime: 6
+shootCone: 60
+rotateSpeed: 3.5
+powerUse: 3
+targetAir: false
+range: 120
+shootEffect: lightningShoot
+heatColor: ff0000
+recoilAmount: 1.5
+size: 2
+health: 1120
+shootSound: spark

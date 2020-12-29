@@ -1,0 +1,44 @@
+name:라이트닝
+description:썬더의 개량형. 충전한 뒤 치명적인 전격을 방출합니다
+
+requirements: [
+    copper/550,
+    lead/450,
+	titanium/225,
+] 
+
+shootType: {
+      type: LightningBulletType
+      damage: 9
+      lightningLength: 20
+      lightningLengthRand: 0
+      lightningColor: a9d8ff
+}
+category: turret
+research:thunder
+
+canOverdrive: true
+size: 3
+range: 120
+reloadTime: 120
+recoilAmount: 3
+shootShake: 1
+shootCone: 60
+rotateSpeed: 2.5
+powerUse: 7.5
+shots: 60
+burstSpacing: 1
+targetAir: false
+chargeTime: 60
+chargeBeginEffect: lancerLaserChargeBegin
+chargeEffect: lightningCharge
+chargeEffects: 3
+chargeMaxDelay: 60
+
+shootEffect: lightningShoot
+
+heatColor: ff0000
+
+
+health: 1980
+shootSound: spark

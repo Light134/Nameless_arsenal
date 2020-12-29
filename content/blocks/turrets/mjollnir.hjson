@@ -1,0 +1,43 @@
+name:묠니르
+description:라이트닝의 개량형. 더 많은 전력량을 대가로 테슬라보다 더 치명적인 레이저를 방출합니다.
+
+requirements: [
+    copper/1300,
+    lead/450,
+	silicon/325,
+	surge-alloy/325,
+] 
+
+shootType: {
+      type: LaserBulletType
+      damage: 36
+      colors: [a9d8ff]
+}
+category: turret
+research:lightning
+
+canOverdrive: true
+size: 4
+range: 176
+reloadTime: 120
+recoilAmount: 3
+shootShake: 1
+shootCone: 45
+rotateSpeed: 2.4
+powerUse: 11.5
+shots: 40
+burstSpacing: 1.5
+targetAir: false
+chargeTime: 60
+chargeBeginEffect: lancerLaserChargeBegin
+chargeEffect: lightningCharge
+chargeEffects: 3
+chargeMaxDelay: 10
+
+shootEffect: lightningShoot
+
+heatColor: ff0000
+
+
+health: 1980
+shootSound: spark

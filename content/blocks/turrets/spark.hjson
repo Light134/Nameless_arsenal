@@ -1,0 +1,32 @@
+type: PowerTurret
+name:스파크
+description:전격 아크를 빠른 속도로 난사하지만, 피해량은 아크보다 적습니다.
+
+requirements: [
+    copper/35,
+    lead/50
+] 
+
+shootType: {
+      type: LightningBulletType
+      damage: 8
+      lightningLength: 12.5
+      lightningLengthRand: 0
+      lightningColor: a9d8ff
+}
+category: turret
+research: arc
+
+canOverdrive: true
+reloadTime: 12
+shootCone: 60
+rotateSpeed: 8
+powerUse: 0.75
+targetAir: false
+range: 80
+shootEffect: lightningShoot
+heatColor: ff0000
+recoilAmount: 1
+size: 1
+health: 260
+shootSound: spark

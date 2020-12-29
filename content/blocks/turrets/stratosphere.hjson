@@ -1,0 +1,179 @@
+type: ItemTurret
+name:스트라토스피어
+description:스웜의 발사 메커니즘을 응용하여 장거리 미사일을 발사합니다.
+
+requirements: [
+	graphite/40,
+	titanium/30,
+	silicon/50,
+	plastanium/45
+]
+
+research:swarmer
+canOverdrive: false
+reloadTime: 60
+shootCone: 1
+rotateSpeed: 6
+targetAir: true
+range: 1200
+shootEffect: lightningShoot
+heatColor: ff0000
+recoilAmount: 1.5
+size: 2
+health: 1120
+shootSound: spark
+shots: 1
+
+ammoTypes: {
+  
+  lead: {
+    type: MissileBulletType
+    damage:180
+    speed:4
+	homingPower: 0.0001
+	trailChance: 0.5
+	lifetime: 300
+	collidesAir: true
+	pierce: true
+	pierceDamageFactor: 0.5
+	pierceCap: 2
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+  }
+
+
+  metaglass: {
+    type: MissileBulletType
+    damage:180
+    speed:4
+	homingPower: 0.0001
+	trailChance: 0.5
+	lifetime: 300
+	collidesAir: true
+	fragBullets: 10
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullet: {
+	type: BasicBulletType
+	speed: 4
+	lifetime: 10
+	damage: 18
+	}
+  }
+  
+  graphite: {
+    type: MissileBulletType
+    damage:1
+    speed:8
+	homingPower: 0.0001
+	trailChance: 0.5
+	lifetime: 37.5
+	collidesAir: true
+	fragBullets: 50
+	fragCone: 30
+	fragVelocityMin: 0.5
+	fragVelocityMax: 1
+	fragLifeMin:0.5
+	fragLifeMax:1
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullet: {
+	type: BasicBulletType
+	speed: 4
+	lifetime: 225
+	damage:1
+	splashDamage: 2
+	splashDamageRadius:80
+	hitEffect: blastExplosion
+	status: burning
+	homingPower: 0.0001
+	}
+  }
+  
+  coal: {
+    type: MissileBulletType
+    damage:160
+    speed:4
+	homingPower: 0.0001
+	trailChance: 0.5
+	lifetime: 300
+	collidesAir: true
+	fragBullets: 4
+	fragVelocityMin: 0.5
+	fragVelocityMax: 1
+	fragLifeMin:0.5
+	fragLifeMax:1
+	status: burning
+	incendAmount: 20
+	incendSpread: 40
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullet: {
+	type: BasicBulletType
+	splashDamageRadius:40
+	speed: 4
+	lifetime: 10
+	damage: 40
+	incendAmount: 10
+	incendSpread: 20
+	status: burning
+	splashDamageRadius:0
+	}
+  }
+  scrap: {
+	damage:160
+	speed:4
+	lifetime: 300
+	pierceDamageFactor: 0
+	pierceCap: 2
+	fragBullets: 40
+	fragVelocityMin: 0.5
+	fragVelocityMax: 1
+	fragLifeMin:0.5
+	fragLifeMax:1
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullet: {
+	type: BasicBulletType
+	speed: 4
+	lifetime: 30
+	damage: 4
+	fragCone: 45
+	pierceDamageFactor: 0.25
+	pierceCap: 4
+	splashDamageRadius:0
+	}
+  }
+  
+  silicon: {
+    type: MissileBulletType
+    damage:180
+    speed:8
+	homingPower: 0.5
+	trailChance: 0.5
+	lifetime: 150
+	collidesAir: true
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	splashDamageRadius:0
+  }
+}
+category:turret

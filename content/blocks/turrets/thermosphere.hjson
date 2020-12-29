@@ -1,0 +1,159 @@
+type: ItemTurret
+name:써모스피어
+description:스트라토스피어의 개량형,더 강력하지만 더 비싼 재료를 요구하는 탄두를 사용합니다.
+
+requirements: [
+    lead/1000
+	graphite/400,
+	titanium/300,
+	silicon/500,
+	surge-alloy/300
+]
+
+research:stratosphere
+canOverdrive: false
+reloadTime: 60
+shootCone: 1
+rotateSpeed: 6
+targetAir: true
+range: 1200
+shootEffect: lightningShoot
+heatColor: ff0000
+recoilAmount: 1.5
+size: 4
+health: 1120
+shootSound: spark
+shots: 1
+
+ammoTypes: {
+  
+  pyratite: {
+    type: MissileBulletType
+    damage:640
+    speed:4
+	homingPower: 0.0001
+	trailChance: 0.5
+	lifetime: 300
+	collidesAir: true
+	fragBullets: 10
+	fragCone: 30
+	fragVelocityMin: 0.5
+	fragVelocityMax: 1
+	fragLifeMin:0.5
+	fragLifeMax:1
+	sprite: nameless-arsernal-thermomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullet: {
+	type: BasicBulletType
+	speed: 4
+	lifetime: 15
+	damage:64
+	splashDamage: 2
+	splashDamageRadius:80
+	hitEffect: blastExplosion
+	status: burning
+	homingPower: 0.0001
+	incendAmount: 50
+	incendSpread: 40
+	}
+  }
+  
+  blast-compound: {
+    type: MissileBulletType
+    damage:1280
+    splashDamageRadius:80
+    speed:2
+    lifetime: 600
+    homingPower: 0.0001
+    trailChance: 0.5
+	sprite: nameless-arsernal-thermomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+  }
+  
+  titanium: {
+    type: MissileBulletType
+    damage:1280
+    splashDamageRadius:80
+    speed:8
+    lifetime: 150
+    homingPower: 0.0001
+    trailChance: 0.5
+    sprite: nameless-arsernal-thermomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullets: 1
+	fragCone: 0.0001
+	hitSound:shotgun
+	splashDamageRadius:0
+    fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 1
+	splashDamageRadius:0
+    length: 32
+    width: 16
+    fromColor: 8aa3f4
+    toColor: 616161
+    damage:640
+	
+    }
+  }
+  
+  thorium: {
+    type: MissileBulletType
+    damage:1280
+    speed:2
+    lifetime: 600
+    homingPower: 0.0001
+    trailChance: 0.5
+    pierceDamageFactor: 0.25
+    pierceCap: 4
+	sprite: nameless-arsernal-thermomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	splashDamageRadius:0
+  }
+  
+  plastanium: {
+    type: MissileBulletType
+    damage:1
+    speed:16
+	homingPower: 0.0001
+	trailChance: 0.5
+	lifetime: 18.75
+	collidesAir: true
+	fragBullets: 50
+	fragCone: 30
+	fragVelocityMin: 0.5
+	fragVelocityMax: 1
+	fragLifeMin:0.5
+	fragLifeMax:1
+	sprite: nameless-arsernal-stratomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	fragBullet: {
+	type: BasicBulletType
+	speed: 8
+	lifetime: 112.5
+	damage:128
+	splashDamageRadius:0
+	hitEffect: blastExplosion
+	status: burning
+	homingPower: 0.0001
+	pierceDamageFactor: 0.9
+    pierceCap: 1
+	}
+  }
+}
+category:turret
