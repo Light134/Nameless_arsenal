@@ -2,10 +2,10 @@ name:묠니르
 description:라이트닝의 개량형. 더 많은 전력량을 대가로 테슬라보다 더 치명적인 레이저를 방출합니다.
 
 requirements: [
-    copper/1300,
-    lead/450,
-	silicon/325,
-	surge-alloy/325,
+	copper/975,
+	lead/375,
+	silicon/225,
+	surge-alloy/300,
 ] 
 
 shootType: {
@@ -24,7 +24,7 @@ recoilAmount: 3
 shootShake: 1
 shootCone: 45
 rotateSpeed: 2.4
-powerUse: 11.5
+powerUse: 6.66667
 shots: 40
 burstSpacing: 1.5
 targetAir: false
