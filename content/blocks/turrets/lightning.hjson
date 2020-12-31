@@ -2,9 +2,9 @@ name:라이트닝
 description:썬더의 개량형. 충전한 뒤 치명적인 전격을 방출합니다
 
 requirements: [
-    copper/550,
-    lead/450,
-	titanium/225,
+    copper/220,
+    lead/150,
+	titanium/75,
 ] 
 
 shootType: {
@@ -25,7 +25,7 @@ recoilAmount: 3
 shootShake: 1
 shootCone: 60
 rotateSpeed: 2.5
-powerUse: 7.5
+powerUse: 4.5
 shots: 60
 burstSpacing: 1
 targetAir: false
