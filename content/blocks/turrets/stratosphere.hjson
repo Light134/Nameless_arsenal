@@ -3,10 +3,10 @@ name:스트라토스피어
 description:스웜의 발사 메커니즘을 응용하여 장거리 미사일을 발사합니다.
 
 requirements: [
-	graphite/40,
-	titanium/30,
-	silicon/50,
-	plastanium/45
+	graphite/80,
+	titanium/60,
+	silicon/100,
+	plastanium/90
 ]
 
 research:swarmer
