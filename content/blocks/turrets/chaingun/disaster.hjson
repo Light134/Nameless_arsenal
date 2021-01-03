@@ -1,0 +1,35 @@
+name:디재스터
+description:다연장 체인건. 사격하면 할수록 공격력이 늘어나지만, 과열의 위험성이 존재합니다.
+
+requirements: [
+	copper/50,
+	lead/100,
+	graphite/75
+]
+
+research: duo
+canOverdrive: true
+reloadTime: 15
+shootCone: 10
+rotateSpeed: 6
+targetAir: true
+range: 100
+shootEffect: fireSmoke
+shootSound: shootSnap
+ejectEffect: shellEjectSmall
+heatColor: ff0000
+recoilAmount: 1.5
+size: 2
+health: 250
+
+ammoTypes: {
+  
+  copper: {
+    type: BasicBulletType
+    damage: 18
+    speed:5
+	lifetime: 20
+	collidesAir: false
+  }
+}
+category:turret
