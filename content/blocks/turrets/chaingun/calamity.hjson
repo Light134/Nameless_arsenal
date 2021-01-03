@@ -9,7 +9,7 @@ requirements: [
 
 research: disaster
 canOverdrive: true
-reloadTime: 20
+reloadTime: 15
 shootCone: 10
 rotateSpeed: 6
 targetAir: true
