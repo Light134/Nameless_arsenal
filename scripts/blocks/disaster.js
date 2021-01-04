@@ -13,7 +13,7 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		this.super$updateTile();
 		
 		this.t1 = Mathf.lerpDelta(this.t1, this.heatcap / 5, 0.05 );
-		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 180, 0.05 );
+		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 180, 0.2 );
 	
 		this.overheat = Math.max(0, this.overheat -= Time.delta);
 		this.heatcap = Math.max(0, this.heatcap);
