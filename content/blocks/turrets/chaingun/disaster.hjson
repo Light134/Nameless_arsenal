@@ -9,7 +9,7 @@ requirements: [
 
 research: duo
 canOverdrive: true
-reloadTime: 30
+reloadTime: 20
 shootCone: 10
 rotateSpeed: 6
 targetAir: true
