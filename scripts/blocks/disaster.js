@@ -28,9 +28,9 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 			this.cooldown = true;
 		} else this.cooldown = false;
 		
-		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 60);
+		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 30);
 		
-		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 30);
+		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 60);
 		
 	},
 	drawSelect(){
