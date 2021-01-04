@@ -34,10 +34,10 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		
 	},
 	drawSelect(){
-		Lines.stroke(this.t1 * 2);
+		Lines.stroke(this.t1 * 1);
 		Draw.color(Color.valueOf("8aa3f4"));
 		Lines.polySeg(200, 0, 200*this.t1, this.x, this.y, 1.5*8, 0);
-		Lines.stroke(this.t1 * 4);
+		Lines.stroke(this.t1 * 2);
 		Draw.color(Color.valueOf("ffa665"));
 		Lines.polySeg(200, 0, 200*this.t2, this.x, this.y, 1.5*8, 0);
 		
