@@ -27,9 +27,6 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		
 		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 30);
 		
-		print("overheat: " + this.overheat)
-		print("heatcap: " + this.heatcap)
-		
 	},
 	drawselect(){
 		Draw.color(Color.valueOf("ffa665"));
