@@ -12,8 +12,8 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 	updateTile(){
 		this.super$updateTile();
 		
-		this.t1 = Mathf.lerpDelta(this.t1, this.heatcap / 5, 0.1 );
-		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 180, 0.1 );
+		this.t1 = Mathf.lerpDelta(this.t1, this.heatcap / 5, 0.05 );
+		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 180, 0.05 );
 	
 		this.overheat = Math.max(0, this.overheat -= Time.delta);
 		this.heatcap = Math.max(0, this.heatcap);
@@ -35,9 +35,9 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 	},
 	drawSelect(){
 		Draw.color(Color.valueOf("8aa3f4"));
-		Lines.polySeg(100, 0, 100*this.t1, this.x, this.y, 1.5*8, 0);
+		Lines.polySeg(200, 0, 200*this.t1, this.x, this.y, 1.5*8, 0);
 		Draw.color(Color.valueOf("ffa665"));
-		Lines.polySeg(100, 0, 100*this.t2, this.x, this.y, 1.5*8, 0);
+		Lines.polySeg(200, 0, 200*this.t2, this.x, this.y, 1.5*8, 0);
 		Draw.color();
 	},
 	
