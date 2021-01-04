@@ -28,7 +28,7 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 30);
 		
 	},
-	drawselect(){
+	drawSelect(){
 		Draw.color(Color.valueOf("ffa665"));
 		Lines.polySeg(100, 0, 100*(this.heatcap / 5), this.x, this.y, 1.5*8, 0);
 		Draw.color(Color.valueOf("8aa3f4"));
