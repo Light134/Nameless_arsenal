@@ -30,14 +30,16 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		
 		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 2);
 		
-		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 30);
+		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 60);
 		
 	},
 	drawSelect(){
 		Draw.color(Color.valueOf("8aa3f4"));
 		Lines.polySeg(200, 0, 200*this.t1, this.x, this.y, 1.5*8, 0);
+		Lines.stroke(10);
 		Draw.color(Color.valueOf("ffa665"));
 		Lines.polySeg(200, 0, 200*this.t2, this.x, this.y, 1.5*8, 0);
+		Lines.stroke(10);
 		Draw.color();
 	},
 	
