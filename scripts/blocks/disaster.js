@@ -7,9 +7,14 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 	heatcap:0,
 	cooldown:true,
 	toggle:false,
+	t1 : 0
+	t2 : 0
 	updateTile(){
 		this.super$updateTile();
 		
+		this.t1 = Mathf.lerpDelta(this.heatcap / 5, this.t1,0.0001 )
+		this.t2 = Mathf.lerpDelta(this.overheat / 180, this.t2,0.0001 )
+	
 		this.overheat = Math.max(0, this.overheat -= Time.delta);
 		this.heatcap = Math.max(0, this.heatcap);
 		
@@ -29,10 +34,10 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		
 	},
 	drawSelect(){
-		Draw.color(Color.valueOf("ffa665"));
-		Lines.polySeg(100, 0, 100*(this.heatcap / 5), this.x, this.y, 1.5*8, 0);
 		Draw.color(Color.valueOf("8aa3f4"));
-		Lines.polySeg(100, 0, 100*(this.overheat / 180), this.x, this.y, 1.5*8, 0);
+		Lines.polySeg(100, 0, 100*this.t1, this.x, this.y, 1.5*8, 0);
+		Draw.color(Color.valueOf("ffa665"));
+		Lines.polySeg(100, 0, 100*this.t2, this.x, this.y, 1.5*8, 0);
 		Draw.color();
 	},
 	
