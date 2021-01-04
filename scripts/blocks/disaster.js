@@ -31,6 +31,14 @@ extendContent(ItemTurret.ItemTurretBuild, disaster, {
 		print("heatcap: " + this.heatcap)
 		
 	},
+	drawselect(){
+		Draw.color(Color.valueOf("ffa665"));
+		Lines.polySeg(100, 0, 100*(this.heatcap / 5), this.x, this.y, 1.5*8, 0);
+		Draw.color(Color.valueOf("8aa3f4"));
+		Lines.polySeg(100, 0, 100*(this.overheat / 180), this.x, this.y, 1.5*8, 0);
+		Draw.color();
+	}
+	
 	
 	shoot(type){
 		if(!this.toggle) {
