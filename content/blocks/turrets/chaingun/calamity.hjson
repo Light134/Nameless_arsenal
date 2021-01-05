@@ -1,5 +1,5 @@
 name:칼라미티
-description:디재스터의 개량형. 공격 속도가 증가했으며 발열량도 상대적으로 줄어들어 상대적으로 더 많은 총알을 발사합니다.
+description:디재스터의 개량형. 공격속도,탄약 재료와 발열량을 강화하여 적들에게 더욱 강한 탄환을 퍼붓습니다.
 
 requirements: [
 	copper/50,
@@ -9,7 +9,7 @@ requirements: [
 
 research: disaster
 canOverdrive: true
-reloadTime: 15
+reloadTime: 12
 shootCone: 10
 rotateSpeed: 6
 targetAir: true
@@ -22,13 +22,12 @@ size: 2
 health: 250
 
 ammoTypes: {
-  
   lead: {
     type: BasicBulletType
     damage: 36
     speed:5
 	lifetime: 20
-	collidesAir: false
+	collidesAir: true
   }
 }
 category:turret
