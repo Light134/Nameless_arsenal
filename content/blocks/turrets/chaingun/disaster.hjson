@@ -29,7 +29,7 @@ ammoTypes: {
     damage: 18
     speed:5
 	lifetime: 20
-	collidesAir: false
+	collidesAir: true
   }
 }
 category:turret
