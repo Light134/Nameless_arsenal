@@ -18,7 +18,7 @@ shootEffect: fireSmoke
 shootSound: shootSnap
 heatColor: ff0000
 recoilAmount: 1.5
-size: 2
+size: 3
 health: 250
 
 ammoTypes: {
