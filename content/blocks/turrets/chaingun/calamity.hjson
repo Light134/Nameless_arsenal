@@ -25,7 +25,7 @@ ammoTypes: {
   lead: {
     type: BasicBulletType
     damage: 36
-    speed:5
+    speed:10
 	lifetime: 20
 	collidesAir: true
   }
