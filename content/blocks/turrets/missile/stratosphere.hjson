@@ -37,7 +37,7 @@ ammoTypes: {
 	pierce: true
 	pierceDamageFactor: 0.5
 	pierceCap: 2
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -54,7 +54,7 @@ ammoTypes: {
 	lifetime: 300
 	collidesAir: true
 	fragBullets: 10
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -81,7 +81,7 @@ ammoTypes: {
 	fragVelocityMax: 1
 	fragLifeMin:0.5
 	fragLifeMax:1
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -115,7 +115,7 @@ ammoTypes: {
 	status: burning
 	incendAmount: 20
 	incendSpread: 40
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -143,7 +143,7 @@ ammoTypes: {
 	fragVelocityMax: 1
 	fragLifeMin:0.5
 	fragLifeMax:1
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -168,7 +168,7 @@ ammoTypes: {
 	trailChance: 0.5
 	lifetime: 150
 	collidesAir: true
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
