@@ -61,6 +61,6 @@ extendContent(ItemTurret.ItemTurretBuild, calamity, {
 		this.super$updateShooting()
 	},
 	baseReloadSpeed(){
-		return this.efficiency() * (1 + (this.heatcap/10));
+		return this.efficiency() * (1 + (this.heatcap/5));
 	}
 });
