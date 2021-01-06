@@ -28,7 +28,7 @@ extendContent(ItemTurret.ItemTurretBuild, calamity, {
 			this.cooldown = true;
 		} else this.cooldown = false;
 		
-		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 30);
+		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 6);
 		
 		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 60);
 		
