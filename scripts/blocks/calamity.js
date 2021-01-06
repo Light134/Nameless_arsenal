@@ -51,7 +51,7 @@ extendContent(ItemTurret.ItemTurretBuild, calamity, {
 			this.super$shoot(type);
 			if(this.heatcap < 10) this.heatcap += 1
 			else {
-				this.overheat += 21
+				this.overheat += 16
 				this.heatcap = 10
 			}
 		}
