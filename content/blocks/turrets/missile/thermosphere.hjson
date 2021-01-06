@@ -41,7 +41,7 @@ ammoTypes: {
 	fragVelocityMax: 1
 	fragLifeMin:0.5
 	fragLifeMax:1
-	sprite: nameless-arsernal-thermomissile
+	sprite: nameless-arsenal-thermomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -69,7 +69,7 @@ ammoTypes: {
     lifetime: 600
     homingPower: 0.0001
     trailChance: 0.5
-	sprite: nameless-arsernal-thermomissile
+	sprite: nameless-arsenal-thermomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -84,7 +84,7 @@ ammoTypes: {
     lifetime: 150
     homingPower: 0.0001
     trailChance: 0.5
-    sprite: nameless-arsernal-thermomissile
+    sprite: nameless-arsenal-thermomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -115,7 +115,7 @@ ammoTypes: {
     trailChance: 0.5
     pierceDamageFactor: 0.25
     pierceCap: 4
-	sprite: nameless-arsernal-thermomissile
+	sprite: nameless-arsenal-thermomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -137,7 +137,7 @@ ammoTypes: {
 	fragVelocityMax: 1
 	fragLifeMin:0.5
 	fragLifeMax:1
-	sprite: nameless-arsernal-stratomissile
+	sprite: nameless-arsenal-stratomissile
 	width: 16
     height: 24
 	backColor: 616161
@@ -154,6 +154,21 @@ ammoTypes: {
 	pierceDamageFactor: 0.9
     pierceCap: 1
 	}
+  }
+  
+  phase-fabric: {
+    type: MissileBulletType
+    damage:1280
+    speed:2
+    lifetime: 600
+    homingPower: 0.0001
+    trailChance: 0.5
+	sprite: nameless-arsenal-thermomissile
+	width: 16
+    height: 24
+	backColor: 616161
+    frontColor: bdbdbd
+	splashDamageRadius:0
   }
 }
 category:turret
