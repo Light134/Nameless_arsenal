@@ -1,8 +1,8 @@
-const catastrophe = extendContent(DoubleTurret, "catastrophe", {});
+const catastrophe = extendContent(ItemTurret, "catastrophe", {});
 
 
 catastrophe.buildType = () =>
-extendContent(DoubleTurret.DoubleTurretBuild, catastrophe, {
+extendContent(ItemTurret.ItemTurretBuild, catastrophe, {
 	overheat:0,
 	heatcap:0,
 	cooldown:true,
