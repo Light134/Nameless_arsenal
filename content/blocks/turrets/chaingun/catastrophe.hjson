@@ -21,7 +21,7 @@ recoilAmount: 1.5
 size: 4
 shots: 2
 health: 250
-spacing: 32
+width: 32
 alternate: true
 
 ammoTypes: {
