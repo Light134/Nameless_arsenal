@@ -13,14 +13,14 @@ extendContent(ItemTurret.ItemTurretBuild, calamity, {
 		this.super$updateTile();
 		
 		this.t1 = Mathf.lerpDelta(this.t1, this.heatcap / 10, 0.05 );
-		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 300, 0.2 );
+		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 360, 0.2 );
 	
 		this.overheat = Math.max(0, this.overheat -= Time.delta);
 		this.heatcap = Math.max(0, this.heatcap);
 		
-		if(this.overheat >= 301) {
+		if(this.overheat >= 361) {
 			this.toggle = true;
-			this.overheat = 301;
+			this.overheat = 360;
 			this.heatcap = 10;
 		}
 		else if(this.overheat == 0) {
