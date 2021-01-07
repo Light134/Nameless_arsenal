@@ -1,0 +1,33 @@
+name:칼라미티
+description:디재스터의 개량형. 공격속도,탄약 재료와 발열량을 강화하여 적들에게 더욱 강한 탄환을 퍼붓습니다.
+
+requirements: [
+	copper/50,
+	lead/100,
+	graphite/75
+]
+
+research: calamity
+canOverdrive: true
+reloadTime: 15
+shootCone: 10
+rotateSpeed: 6
+targetAir: true
+range: 300
+shootEffect: fireSmoke
+shootSound: shootSnap
+heatColor: ff0000
+recoilAmount: 1.5
+size: 3
+health: 250
+
+ammoTypes: {
+  titanium: {
+    type: BasicBulletType
+    damage: 66
+    speed:15
+	lifetime: 20
+	collidesAir: true
+  }
+}
+category:turret
