@@ -9,7 +9,7 @@ requirements: [
 
 research: calamity
 canOverdrive: true
-reloadTime: 15
+reloadTime: 12
 shootCone: 10
 rotateSpeed: 6
 targetAir: true
