@@ -1,4 +1,4 @@
-const catastrophe = extend (DoubleTurret, "catastrophe", {});
+const catastrophe = extendContent(DoubleTurret, "catastrophe", {});
 
 
 catastrophe.buildType = () =>
