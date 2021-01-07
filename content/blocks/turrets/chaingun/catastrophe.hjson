@@ -10,7 +10,7 @@ requirements: [
 research: calamity
 canOverdrive: true
 reloadTime: 12
-shootCone: 10
+shootCone: 0.0001
 rotateSpeed: 6
 targetAir: true
 range: 300
@@ -21,7 +21,8 @@ recoilAmount: 1.5
 size: 3
 health: 250
 shots: 2
-shotWidth: 2
+shotWidth:8
+alternate: true
 
 ammoTypes: {
   titanium: {
