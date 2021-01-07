@@ -20,6 +20,7 @@ heatColor: ff0000
 recoilAmount: 1.5
 size: 4
 health: 250
+alternate:true
 
 ammoTypes: {
   titanium: {
