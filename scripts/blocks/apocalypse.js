@@ -1,8 +1,8 @@
-const catastrophe = extendContent(ItemTurret, "catastrophe", {});
+const apocalypse = extendContent(ItemTurret, "apocalypse", {});
 
 
-catastrophe.buildType = () =>
-extendContent(ItemTurret.ItemTurretBuild, catastrophe, {
+apocalypse.buildType = () =>
+extendContent(ItemTurret.ItemTurretBuild, apocalypse, {
 	overheat:0,
 	heatcap:0,
 	cooldown:true,
@@ -48,11 +48,11 @@ extendContent(ItemTurret.ItemTurretBuild, catastrophe, {
 	
 	shoot(type){
 		if(!this.toggle) {
-			var i = (this.shotCounter % catastrophe.shots) - (catastrophe.shots-1)/2;
-			catastrophe.tr.trns(this.rotation - 90, catastrophe.spread * i + Mathf.range(catastrophe.xRand), catastrophe.size * Vars.tilesize / 2);
-			this.bullet(type, this.rotation + Mathf.range(catastrophe.inaccuracy));
+			var i = (this.shotCounter % apocalypse.shots) - (apocalypse.shots-1)/2;
+			apocalypse.tr.trns(this.rotation - 90, apocalypse.spread * i + Mathf.range(apocalypse.xRand), apocalypse.size * Vars.tilesize / 2);
+			this.bullet(type, this.rotation + Mathf.range(apocalypse.inaccuracy));
 			this.shotCounter++;
-			this.recoil = catastrophe.recoilAmount;
+			this.recoil = apocalypse.recoilAmount;
 			this.heat = 1;
 			this.effects();
 			this.useAmmo();
