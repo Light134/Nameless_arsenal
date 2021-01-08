@@ -49,7 +49,7 @@ extendContent(ItemTurret.ItemTurretBuild, apocalypse, {
 	shoot(type){
 		if(!this.toggle) {
 			var i = (this.shotCounter % apocalypse.shots) - (apocalypse.shots-1)/2;
-			apocalypse.tr.trns(this.rotation - 90, apocalypse.spread * i + Mathf.range(apocalypse.xRand), apocalypse.size * Vars.tilesize / 2);
+			apocalypse.tr.trns(this.rotation - 90, apocalypse.spread * i + Mathf.range(apocalypse.xRand), (apocalypse.size * Vars.tilesize / 2) - 8);
 			this.bullet(type, this.rotation + Mathf.range(apocalypse.inaccuracy));
 			this.shotCounter++;
 			this.recoil = apocalypse.recoilAmount;
