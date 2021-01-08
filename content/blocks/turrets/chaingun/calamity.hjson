@@ -17,7 +17,7 @@ range: 200
 shootEffect: fireSmoke
 shootSound: shootSnap
 heatColor: ff0000
-recoilAmount: 1.5
+recoilAmount: 3
 size: 3
 health: 250
 recoil: 2
