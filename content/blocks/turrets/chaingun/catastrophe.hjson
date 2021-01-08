@@ -1,5 +1,5 @@
-name:카타스트로피
-description:칼라미티의 개량형. 전체적인 성능 개선을 통해 더 강력한 탄환을 더 빠르게 쏟아냅니다.
+name:칼라미티
+description:디재스터의 개량형. 공격속도,탄약 재료와 발열량을 강화하여 적들에게 더욱 강한 탄환을 퍼붓습니다.
 
 requirements: [
 	copper/50,
@@ -9,18 +9,20 @@ requirements: [
 
 research: calamity
 canOverdrive: true
-reloadTime: 12
-shootCone: 0.0001
+reloadTime: 6
+inaccuracy: 3
 rotateSpeed: 6
 targetAir: true
 range: 300
 shootEffect: fireSmoke
-shootSound: shootSnap
+shootSound: shootBig
 heatColor: ff0000
 recoilAmount: 1.5
 size: 4
+spread: 20
+shots: 2
+xRand: 3
 health: 250
-alternate:true
 
 ammoTypes: {
   titanium: {
@@ -29,6 +31,7 @@ ammoTypes: {
     speed:15
 	lifetime: 20
 	collidesAir: true
-  }
+	bulletHeight: 11
+  },
 }
 category:turret
