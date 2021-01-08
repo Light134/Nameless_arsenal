@@ -12,23 +12,23 @@ extendContent(ItemTurret.ItemTurretBuild, apocalypse, {
 	updateTile(){
 		this.super$updateTile();
 		
-		this.t1 = Mathf.lerpDelta(this.t1, this.heatcap / 20, 0.05 );
-		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 450, 0.2 );
+		this.t1 = Mathf.lerpDelta(this.t1, this.heatcap / 30, 0.05 );
+		this.t2 = Mathf.lerpDelta(this.t2, this.overheat / 600, 0.2 );
 	
 		this.overheat = Math.max(0, this.overheat -= Time.delta);
 		this.heatcap = Math.max(0, this.heatcap);
 		
-		if(this.overheat >= 451) {
+		if(this.overheat >= 601) {
 			this.toggle = true;
-			this.overheat = 450;
-			this.heatcap = 20;
+			this.overheat = 600;
+			this.heatcap = 30;
 		}
 		else if(this.overheat == 0) {
 			this.toggle = false;
 			this.cooldown = true;
 		} else this.cooldown = false;
 		
-		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 3);
+		if(this.toggle && this.heatcap > 0) this.heatcap -= (Time.delta / 2);
 		
 		if(!this.toggle && this.cooldown && this.heatcap > 0) this.heatcap -= (Time.delta / 60);
 		
@@ -56,10 +56,10 @@ extendContent(ItemTurret.ItemTurretBuild, apocalypse, {
 			this.heat = 1;
 			this.effects();
 			this.useAmmo();
-			if(this.heatcap < 20) this.heatcap += 1
+			if(this.heatcap < 30) this.heatcap += 1
 			else {
-				this.overheat += 7
-				this.heatcap = 20
+				this.overheat += 4
+				this.heatcap = 30
 			}
 		}
     },
