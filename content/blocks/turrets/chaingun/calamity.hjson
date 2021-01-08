@@ -20,6 +20,7 @@ heatColor: ff0000
 recoilAmount: 1.5
 size: 3
 health: 250
+recoil: 2
 
 ammoTypes: {
   lead: {
