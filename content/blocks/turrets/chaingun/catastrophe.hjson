@@ -17,13 +17,12 @@ range: 300
 shootEffect: fireSmoke
 shootSound: shootBig
 heatColor: ff0000
-recoilAmount: 1.5
+recoilAmount: 3
 size: 4
 spread: 20
 shots: 2
 xRand: 3
 health: 250
-recoil:3
 
 ammoTypes: {
   titanium: {
