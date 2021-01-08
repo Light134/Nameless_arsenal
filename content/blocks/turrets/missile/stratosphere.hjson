@@ -23,7 +23,7 @@ size: 2
 health: 1120
 shootSound: spark
 shots: 1
-recoilAmount: 2
+recoilAmount: 6
 
 ammoTypes: {
   
