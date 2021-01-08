@@ -23,6 +23,7 @@ spread: 20
 shots: 2
 xRand: 3
 health: 250
+recoil:3
 
 ammoTypes: {
   titanium: {
