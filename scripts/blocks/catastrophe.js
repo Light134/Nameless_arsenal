@@ -49,7 +49,7 @@ extendContent(ItemTurret.ItemTurretBuild, catastrophe, {
 	shoot(type){
 		if(!this.toggle) {
 			var i = (this.shotCounter % catastrophe.shots) - (catastrophe.shots-1)/2;
-			catastrophe.tr.trns(this.rotation - 90, catastrophe.spread * i + Mathf.range(catastrophe.xRand) + 24, catastrophe.size * Vars.tilesize / 2);
+			catastrophe.tr.trns(this.rotation - 90, catastrophe.spread * i + Mathf.range(catastrophe.xRand), catastrophe.size * Vars.tilesize / 2);
 			this.bullet(type, this.rotation + Mathf.range(catastrophe.inaccuracy));
 			this.shotCounter++;
 			this.recoil = catastrophe.recoilAmount;
@@ -58,7 +58,7 @@ extendContent(ItemTurret.ItemTurretBuild, catastrophe, {
 			this.useAmmo();
 			if(this.heatcap < 20) this.heatcap += 1
 			else {
-				this.overheat += 13
+				this.overheat += 7
 				this.heatcap = 20
 			}
 		}
