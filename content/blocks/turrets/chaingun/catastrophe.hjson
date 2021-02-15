@@ -17,7 +17,7 @@ range: 300
 shootEffect: fireSmoke
 shootSound: shootBig
 heatColor: ff0000
-recoilAmount: 6
+recoilAmount: 1.5
 size: 4
 spread: 20
 shots: 2
@@ -32,7 +32,7 @@ ammoTypes: {
 	lifetime: 20
 	collidesAir: true
 	bulletHeight: 11
-	bulletSprite: nameless-arsenal-gatlingbullet
+	sprite: gatlingbullet
   },
 }
 category:turret

@@ -21,7 +21,6 @@ heatColor: ff0000
 recoilAmount: 1.5
 size: 2
 health: 250
-recoil:1
 
 ammoTypes: {
   
