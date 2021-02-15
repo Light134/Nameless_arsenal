@@ -18,7 +18,7 @@ shootEffect: fireSmoke
 shootSound: shootBig
 heatColor: ff0000
 recoilAmount: 1.5
-size: 4
+size: 5
 spread: 10
 shots: 3
 xRand: 3
