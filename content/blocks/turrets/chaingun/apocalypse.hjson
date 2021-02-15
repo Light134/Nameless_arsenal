@@ -35,6 +35,7 @@ ammoTypes: {
 	bulletHeight: 11
 	pierceDamageFactor: 0.5
     	pierceCap: 1
+	sprite:nameless-arsenal-gatlingbullet
   },
 }
 category:turret
