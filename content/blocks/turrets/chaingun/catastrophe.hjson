@@ -32,7 +32,7 @@ ammoTypes: {
 	lifetime: 20
 	collidesAir: true
 	bulletHeight: 11
-	sprite:nameless-arsenal-gatlingbullet
+	bulletSprite: nameless-arsenal-gatlingbullet
   },
 }
 category:turret
