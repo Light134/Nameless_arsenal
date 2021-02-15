@@ -31,7 +31,7 @@ ammoTypes: {
     speed:5
 	lifetime: 20
 	collidesAir: true
-	sprite:nameless-arsenal-gatlingbullet
+	bulletSprite: nameless-arsenal-gatlingbullet
   }
 }
 category:turret
