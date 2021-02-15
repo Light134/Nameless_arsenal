@@ -17,24 +17,21 @@ range: 300
 shootEffect: fireSmoke
 shootSound: shootBig
 heatColor: ff0000
-recoilAmount: 8
-size: 5
+recoilAmount: 1.5
+size: 4
 spread: 10
 shots: 3
 xRand: 3
 health: 250
-recoil: 3
 
 ammoTypes: {
-  thorium: {
+  titanium: {
     type: BasicBulletType
-    damage: 80
+    damage: 66
     speed:15
 	lifetime: 20
 	collidesAir: true
 	bulletHeight: 11
-	pierceDamageFactor: 0.5
-    	pierceCap: 1
 	bulletSprite: nameless-arsenal-gatlingbullet
   },
 }

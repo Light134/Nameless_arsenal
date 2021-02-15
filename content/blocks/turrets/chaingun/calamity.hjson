@@ -17,10 +17,9 @@ range: 200
 shootEffect: fireSmoke
 shootSound: shootSnap
 heatColor: ff0000
-recoilAmount: 3
+recoilAmount: 1.5
 size: 3
 health: 250
-recoil: 2
 
 ammoTypes: {
   lead: {
@@ -29,7 +28,7 @@ ammoTypes: {
     speed:10
 	lifetime: 20
 	collidesAir: true
-	sprite:nameless-arsenal-gatlingbullet
+	bulletSprite: nameless-arsenal-gatlingbullet
   }
 }
 category:turret
