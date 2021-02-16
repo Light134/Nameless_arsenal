@@ -17,7 +17,7 @@ range: 300
 shootEffect: fireSmoke
 shootSound: shootBig
 heatColor: ff0000
-recoilAmount: 1.5
+recoilAmount: 4
 size: 5
 spread: 10
 shots: 3
