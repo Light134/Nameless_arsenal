@@ -31,7 +31,6 @@ ammoTypes: {
     speed:15
 	lifetime: 20
 	collidesAir: true
-	bulletHeight: 32
 	sprite: nameless-arsenal-gatlingbullet
 	frontColor: ffffb1
   },
