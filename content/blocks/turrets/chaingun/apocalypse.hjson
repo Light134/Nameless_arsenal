@@ -33,6 +33,7 @@ ammoTypes: {
 	collidesAir: true
 	bulletHeight: 11
 	sprite: nameless-arsenal-gatlingbullet
+	frontColor: ffffb1
   },
 }
 category:turret
