@@ -3,5 +3,5 @@ displayName: Nameless's arsenal
 author: 무명악보
 description: this mod adds stuff like tesla coils,long ranged missile and etc.
 version: "1.0.4"
-minGameVersion: "121"
+minGameVersion: "126.1"
 dependencies: [ ]
