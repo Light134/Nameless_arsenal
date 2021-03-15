@@ -1,4 +1,4 @@
-name:칼라미티
+name:카타스트로피
 description:디재스터의 개량형. 공격속도,탄약 재료와 발열량을 강화하여 적들에게 더욱 강한 탄환을 퍼붓습니다.
 
 requirements: [
@@ -32,7 +32,8 @@ ammoTypes: {
 	lifetime: 20
 	collidesAir: true
 	bulletHeight: 11
-	bulletSprite: nameless-arsenal-gatlingbullet
+	sprite: nameless-arsenal-gatlingbullet
+	backColor: 000000
   },
 }
 category:turret

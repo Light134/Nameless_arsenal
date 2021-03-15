@@ -17,7 +17,7 @@ range: 300
 shootEffect: fireSmoke
 shootSound: shootBig
 heatColor: ff0000
-recoilAmount: 5
+recoilAmount: 1.5
 size: 5
 spread: 10
 shots: 3
@@ -25,14 +25,15 @@ xRand: 3
 health: 250
 
 ammoTypes: {
-  titanium: {
+  thorium: {
     type: BasicBulletType
-    damage: 66
+    damage: 120
     speed:15
 	lifetime: 20
 	collidesAir: true
+	bulletHeight: 11
 	sprite: nameless-arsenal-gatlingbullet
-	frontColor: ffffb1
+	backColor: 000000
   },
 }
 category:turret
